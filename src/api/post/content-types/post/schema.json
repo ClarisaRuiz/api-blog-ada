@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Primero": {
+      "type": "string"
+    },
+    "Fecha": {
+      "type": "date",
+      "required": true,
+      "private": true,
+      "unique": true
+    },
+    "Descripcion": {
+      "type": "richtext",
+      "default": "No posee descripción"
+    },
+    "Imagen": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
