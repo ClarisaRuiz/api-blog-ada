@@ -4,28 +4,24 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post",
-    "description": ""
+    "displayName": "Post"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Primero": {
+    "name": {
       "type": "string"
     },
-    "Fecha": {
-      "type": "date",
-      "required": true,
-      "private": true,
-      "unique": true
+    "date": {
+      "type": "date"
     },
-    "Descripcion": {
+    "description": {
       "type": "richtext",
-      "default": "No posee descripción"
+      "default": "No posee descripción."
     },
-    "Imagen": {
+    "image": {
       "allowedTypes": [
         "images"
       ],
